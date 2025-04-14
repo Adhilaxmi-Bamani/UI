@@ -3,31 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel ="stylesheet" href="1.css">
-    <title>MREM</title>
-    <h1>MALLA REDDY COLLEGE OF ENGINEERING AND MANAGEMENT SCIENCES</h1>
+    <title>Form</title>
 </head>
 <style>
+    .login{
+        background-color:gray;
+        background-position: center;
+        background-size: cover;
+        text-align: center;
+        height: 500px;
+        width: 400px;
+        border-radius: 20px;
+        border: 1px solid;
+        text-transform: uppercase;
+
+    }
+    form{
+        display:block;
+        padding: 20%;
+        box-sizing: border-box;
+        flex-direction: column;
+        display: flex;
+        gap: 5px;
+   
+    }
     h1{
-    text-align: center;
-    font-style: oblique;
-    color: blueviolet;
+        font-size: 50px;
+        margin-bottom: 20px;
+    }
+    label{
+        color:cornsilk;
+        
+        text-transform: capitalize;
 
-    
-}
-p{
-    text-align:left;
-    color:green;
-    font-style:normal;
-
-}
-
-
-
+    }
+    input{
+        color:brown;
+    }
+    button{
+        font-size: 20px;
+        padding: auto;
+       height: 40px;
+       line-height: 40px;
+       border-radius: 40px;
+       border:cornsilk solid;
+       margin: 10px 0px;
+      
+       
+    }
 </style>
+
 <body>
-    <p>Malla Reddy Engineering College & Management Sciences is an institution and is affiliated to JNTU, Hyderabad. The college was started in the year 2008 under the auspices of Vemula Raghava Reddy Lakshmamma Edcuational Society, The college provides a quiet and ideal setting amidst natural surroundings. It is located on Hyderabad – Nagpur National Highway (Medchal Road), Telangana, within a verdant 10 acres of serene environment which is lush green and free of pollution.</p>
-<img src="mrem.jpeg" alt="mrem"height="200px"width="200px">
+    <div class="login">
+    <form>
+        <h1>Login</h1>
+        <label>Name</label>
+        <input type="text">
+        <label>Email</label>
+        <input type="text">
+        <button>Submit</button>
+
+    </form>
+</div>
     
 </body>
 </html>
