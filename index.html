@@ -3,68 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Form</title>
-</head>
-<style>
-    .login{
-        background-color:gray;
-        background-position: center;
-        background-size: cover;
-        text-align: center;
-        height: 500px;
-        width: 400px;
-        border-radius: 20px;
-        border: 1px solid;
-        text-transform: uppercase;
-
-    }
-    form{
-        display:block;
-        padding: 20%;
-        box-sizing: border-box;
-        flex-direction: column;
-        display: flex;
-        gap: 5px;
-   
-    }
-    h1{
-        font-size: 50px;
-        margin-bottom: 20px;
-    }
-    label{
-        color:cornsilk;
+    <title>Navigation bar</title>
+    <style>
         
-        text-transform: capitalize;
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
 
-    }
-    input{
-        color:brown;
-    }
-    button{
-        font-size: 20px;
-        padding: auto;
-       height: 40px;
-       line-height: 40px;
-       border-radius: 40px;
-       border:cornsilk solid;
-       margin: 10px 0px;
-      
-       
-    }
-</style>
 
+navbar {
+  background-color: #333;
+  padding: 10px 0;
+}
+
+
+navbar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex; 
+  justify-content: center; 
+}
+
+
+navbar li {
+  margin: 0 20px;
+}
+
+
+navbar a {
+  color: black;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 8px 12px;
+  transition: background 0.3s;
+}
+
+navbar a:hover {
+  background-color: #575757;
+  border-radius: 4px;
+}
+
+
+    </style>
+</head>
 <body>
-    <div class="login">
-    <form>
-        <h1>Login</h1>
-        <label>Name</label>
-        <input type="text">
-        <label>Email</label>
-        <input type="text">
-        <button>Submit</button>
-
-    </form>
-</div>
+    <navbar>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+            
+        </ul>
+    </navbar>
     
 </body>
 </html>
